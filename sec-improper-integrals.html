@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-18T15:11:05-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Improper Integrals</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\foo}{bar}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="calc-notes.html"><span class="title">Calculus Notes</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-partial-fractions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chap-differential-equations.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-partial-fractions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chap-differential-equations.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link part"><a href="calc-1.html" data-scroll="calc-1"><span class="codenumber">I</span> <span class="title">Calculus I</span></a></li>
+<li class="link">
+<a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
+<li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
+<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
+<li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
+<li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity</a></li>
+<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives</a></li>
+<li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques</a></li>
+<li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions</a></li>
+<li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions">Trig Functions</a></li>
+<li><a href="sec-chain-rule.html" data-scroll="sec-chain-rule">Chain Rule</a></li>
+<li><a href="sec-implicit-differentiation.html" data-scroll="sec-implicit-differentiation">Implicit Differentiation</a></li>
+<li><a href="sec-related-rates.html" data-scroll="sec-related-rates">Related Rates</a></li>
+<li><a href="sec-local-linear-approx-dif.html" data-scroll="sec-local-linear-approx-dif">Local Linear Approximation Differential</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-applications-of-derivatives.html" data-scroll="chap-applications-of-derivatives"><span class="codenumber">3</span> <span class="title">Applications of Derivatives</span></a><ul>
+<li><a href="sec-appliations-of-derivatives.html" data-scroll="sec-appliations-of-derivatives">Applications of Derivatives</a></li>
+<li><a href="sec-relative-extrema.html" data-scroll="sec-relative-extrema">Relative Extrema</a></li>
+<li><a href="sec-absolute-extrema.html" data-scroll="sec-absolute-extrema">Absolute Extrema</a></li>
+<li><a href="sec-applied-max-min.html" data-scroll="sec-applied-max-min">Applied Max-Min Problems</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-integrals.html" data-scroll="chap-integrals"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="sec-intro-to-integrals.html" data-scroll="sec-intro-to-integrals">Intro to Integrals</a></li>
+<li><a href="sec-integration-by-substitution.html" data-scroll="sec-integration-by-substitution">Integration by Substitution</a></li>
+<li><a href="sec-area-and-definite-integrals.html" data-scroll="sec-area-and-definite-integrals">Area and Definite Integrals</a></li>
+<li><a href="sec-fundamental-theorum-of-calculus.html" data-scroll="sec-fundamental-theorum-of-calculus">Fundamental Theorum of Calculus</a></li>
+<li><a href="sec-definite-integrals-w-u-sub.html" data-scroll="sec-definite-integrals-w-u-sub">Definite Integrals with U-Substitution</a></li>
+</ul>
+</li>
+<li class="link part"><a href="calc-2.html" data-scroll="calc-2"><span class="codenumber">II</span> <span class="title">Calculus II</span></a></li>
+<li class="link">
+<a href="chap-applications-of-definite-integrals.html" data-scroll="chap-applications-of-definite-integrals"><span class="codenumber">5</span> <span class="title">Applications of Definite Integrals</span></a><ul>
+<li><a href="sec-area-between-curves.html" data-scroll="sec-area-between-curves">Area Between Two Curves</a></li>
+<li><a href="sec-volumes-by-slicing.html" data-scroll="sec-volumes-by-slicing">Volumes by Slicing</a></li>
+<li><a href="sec-arc-length-and-surface-area.html" data-scroll="sec-arc-length-and-surface-area">Arc Length and Surface Area</a></li>
+<li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-exponential-log-inverse-trig-functions.html" data-scroll="chap-exponential-log-inverse-trig-functions"><span class="codenumber">6</span> <span class="title">Exponential, Logarithmic and Inverse Trigonometric Functions</span></a><ul>
+<li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions">Exponential and Logrithmic Functions</a></li>
+<li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
+<li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
+<li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule">L'Hopital's Rule</a></li>
+<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions</a></li>
+<li><a href="sec-hyperbolic-trig-functions.html" data-scroll="sec-hyperbolic-trig-functions">Hyperbolic Trig Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">7</span> <span class="title">Principles of Integral Evaluation</span></a><ul>
+<li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts</a></li>
+<li><a href="sec-integrating-trig-functions.html" data-scroll="sec-integrating-trig-functions">Integrating Trig Functions</a></li>
+<li><a href="sec-trig-substitution.html" data-scroll="sec-trig-substitution">Trig Substitution</a></li>
+<li><a href="sec-partial-fractions.html" data-scroll="sec-partial-fractions">Partial Fractions</a></li>
+<li><a href="sec-improper-integrals.html" data-scroll="sec-improper-integrals" class="active">Improper Integrals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-differential-equations.html" data-scroll="chap-differential-equations"><span class="codenumber">8</span> <span class="title">Differential Equations</span></a><ul><li><a href="sec-intro-to-differential-equations.html" data-scroll="sec-intro-to-differential-equations">Intro to Differential Equations</a></li></ul>
+</li>
+<li class="link part"><a href="calc-3.html" data-scroll="calc-3"><span class="codenumber">III</span> <span class="title">Calculus III</span></a></li>
+<li class="link">
+<a href="ch-infinite-series.html" data-scroll="ch-infinite-series"><span class="codenumber">9</span> <span class="title">Infinite Series</span></a><ul>
+<li><a href="sec-sequences.html" data-scroll="sec-sequences">Sequences</a></li>
+<li><a href="sec-monotone-sequence.html" data-scroll="sec-monotone-sequence">Monotone Sequence</a></li>
+<li><a href="sec-infinite-series.html" data-scroll="sec-infinite-series">Infinite Series</a></li>
+<li><a href="sec-convergence-test.html" data-scroll="sec-convergence-test">Convergence Tests</a></li>
+<li><a href="sec-Comparison-Ratio-and-Root-Tests.html" data-scroll="sec-Comparison-Ratio-and-Root-Tests">Comparison, Ratio, and Root Tests</a></li>
+<li><a href="sec-alternating-series-conditional-absolute-convergence.html" data-scroll="sec-alternating-series-conditional-absolute-convergence">Alternating Series; Conditional and Absolute Convergence</a></li>
+<li><a href="sec-maclaurin-taylor-polynomials.html" data-scroll="sec-maclaurin-taylor-polynomials">Maclaurin and Taylor Polynomials</a></li>
+<li><a href="sec-maclaurin-taylor-power-series.html" data-scroll="sec-maclaurin-taylor-power-series">Maclaurin and Taylor Series; Power Series</a></li>
+<li><a href="sec-differentiating-and-integrating-power-series.html" data-scroll="sec-differentiating-and-integrating-power-series">Differentiation and Integrating Power Series</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-parametric-and-polar-curves-conic-sections.html" data-scroll="ch-parametric-and-polar-curves-conic-sections"><span class="codenumber">10</span> <span class="title">Parametric and Polar Curves; Conic Sections</span></a><ul>
+<li><a href="sec-parametric-equations-tangent-lines-and-arc-length-for-parametric-curves.html" data-scroll="sec-parametric-equations-tangent-lines-and-arc-length-for-parametric-curves">Parametric Equations, Tangent Lines, and Arc Length for Parametric Curves</a></li>
+<li><a href="sec-polar-coordinates.html" data-scroll="sec-polar-coordinates">Polar Coordinates</a></li>
+<li><a href="sec-tangent-lines-arc-length-and-area-for-polar-coordinates.html" data-scroll="sec-tangent-lines-arc-length-and-area-for-polar-coordinates">Tangent Lines, Arc Length, and Area for Polar Coordinates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-3space-vectors.html" data-scroll="ch-3space-vectors"><span class="codenumber">11</span> <span class="title">Three-Dimentional Space; Vectors</span></a><ul>
+<li><a href="sec-rectangular-coordinates-in-3d-space-cylindrical-surfaces.html" data-scroll="sec-rectangular-coordinates-in-3d-space-cylindrical-surfaces">Rectangle Coordinates in 3D Space; Cylindrical Surfaces</a></li>
+<li><a href="sec-vectors.html" data-scroll="sec-vectors">Vectors</a></li>
+<li><a href="sec-dot-products-projections.html" data-scroll="sec-dot-products-projections">Dot Products and Projections</a></li>
+<li><a href="sec-cross-product.html" data-scroll="sec-cross-product">Cross Product</a></li>
+<li><a href="sec-parametric-equations-of-lines.html" data-scroll="sec-parametric-equations-of-lines">Parametric Equations of Lines</a></li>
+<li><a href="sec-planes-in-3space.html" data-scroll="sec-planes-in-3space">Planes in 3-Space</a></li>
+<li><a href="sec-quadric-surfaces.html" data-scroll="sec-quadric-surfaces">Quadric Surfaces</a></li>
+<li><a href="sec-cylindrical-and-spherical-coordinates.html" data-scroll="sec-cylindrical-and-spherical-coordinates">Cylindrical and Spherical Coordinates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-vector-valued-functions.html" data-scroll="ch-vector-valued-functions"><span class="codenumber">12</span> <span class="title">Vector-Values Functions</span></a><ul>
+<li><a href="sec-vector-values-functions.html" data-scroll="sec-vector-values-functions">Vector-Valued Functions</a></li>
+<li><a href="sec-calculus-of-vector-values-functions.html" data-scroll="sec-calculus-of-vector-values-functions">Calculus of Vector-Valued Functions</a></li>
+<li><a href="sec-change-of-parameters-arc-length.html" data-scroll="sec-change-of-parameters-arc-length">Change of Parameter; Arc Length</a></li>
+<li><a href="sec-unit-tangent-unit-normal-binomial-vectors.html" data-scroll="sec-unit-tangent-unit-normal-binomial-vectors">Unit Tangent, Unit Normal, and Binomial Vectors</a></li>
+<li><a href="sec-Curvature.html" data-scroll="sec-Curvature">Curvature</a></li>
+</ul>
+</li>
+<li class="link part"><a href="calc-4.html" data-scroll="calc-4"><span class="codenumber">IV</span> <span class="title">Calculus IV (*)</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-improper-integrals"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.5</span> <span class="title">Improper Integrals</span>
+</h2>
+<section class="introduction" id="introduction-15"><p id="p-842">An improper integral is an integral that either contians positive or negative infinity as point <em class="emphasis">a</em> or <em class="emphasis">b</em>, or contains a function that has a verticle asymptote somewhere between or at <em class="emphasis">a</em> or <em class="emphasis">b</em>.</p>
+<p id="p-843">Contrast the following functions: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel top" style="width:47.3684210526316%;">
+<p id="p-844">Regular Integral</p>
+<div class="displaymath">
+\begin{align*}
+\int _{1} ^{10} \dfrac{1}{x^2} dx \amp = \int _{1} ^{10} x^{-2} dx \\
+\amp = \left[ \dfrac{x ^{-1} }{-1} \right] _{1} ^{10} \\
+\amp = \left( - \dfrac{1}{10} \right) - \left( - \dfrac{1}{1} \right) \\
+\amp = - \dfrac{1}{10} + 1\\
+\amp = \dfrac{9}{10} 
+\end{align*}
+</div>
+<p class="continuation"><article class="note remark-like" id="note-integral-one-to-10"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span>
+</h6>
+<p id="p-845">Notice: If we were to to go take the same integral from 1 to 100 we would get \(\dfrac{99}{100}.\)</p></article></p>
+</div>
+<div class="sbspanel top" style="width:47.3684210526316%;">
+<p id="p-846">Improper Integral</p>
+<div class="displaymath">
+\begin{align*}
+\int _1 ^{\infty} \amp = \lim_{b\to\infty} \int_{1}^{b} \dfrac{1}{x^2} dx \\
+\amp = \lim_{b\to\infty} \int_{1}^{b} x^{-2} dx \\
+\amp = \lim_{b\to\infty} \left[ \dfrac{x^{-1}}{-1} \right] _{1}^{b} \\
+\amp = \lim_{b\to\infty} \left( - \dfrac{1}{b} \right) - \left( - \dfrac{1}{1} \right) \\
+\amp = \lim_{b\to\infty} - \dfrac{1}{b} + 1 \\
+\amp = 0 + 1\\
+\amp = 1 
+\end{align*}
+</div>
+</div>
+</div></div></p></section><section class="subsection" id="sub-improper-integral-to-infinity"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">7.5.1</span> <span class="title">Improper Integrals to Infinity</span>
+</h3>
+<p id="p-847"><article class="assemblage assemblage-like" id="as-improper-integral-to-infinity"><p id="p-848">The improper integral of <em class="emphasis">f</em> over the interval \([a\mbox{, }+\infty)\) is defined to be:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _{a}^{+\infty} f(x) dx = \lim_{b\to\infty} \int_{a}^{b} f(x) dx
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-301"><p id="p-849">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
+<li id="li-302"><p id="p-850">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
+</ul></article> <article class="theorem theorem-like" id="th-improper-integral-diverging"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.5.2</span><span class="period">.</span>
+</h6>
+<p id="p-851">The integral \(\displaystyle\int _{a}^{\infty} \dfrac{1}{x^P} dx \) converges if \(P &gt; 1\text{,}\) and diverges if \(P \leq 1\text{.}\)</p></article></p>
+<p id="p-852"><article class="assemblage assemblage-like" id="as-improper-integral-from-infintiy"><p id="p-853">The improper integral of <em class="emphasis">f</em> over the interval \(( -\infty\mbox{, }b]\) is defined to be:</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-\infty}^{b} f(x) dx = \lim_{a\to - \infty} \int_{a}^{b} f(x) dx 
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-303"><p id="p-854">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
+<li id="li-304"><p id="p-855">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
+</ul></article></p>
+<p id="p-856">Additionally, <article class="assemblage assemblage-like" id="as-improper-integral-from-infinity-to-infinity"><p id="p-857">The improper integral of <em class="emphasis">f</em> over the inverval \((-\infty\mbox{, }+\infty)\) is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-\infty}^{+\infty} f(x) dx = \int_{-\infty}^{c}f(x)dx + \int_{c}^{\infty}f(x)dx 
+\end{equation*}
+</div>
+<p class="continuation">where <em class="emphasis">c</em> is any real number.</p>
+<ul class="disc">
+<li id="li-305"><p id="p-858">If both converge, then the functions converges.</p></li>
+<li id="li-306"><p id="p-859">Otherwise, the function diverges.</p></li>
+</ul></article></p></section><section class="subsection" id="sub-improper-integrals-asymptotes"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">7.5.2</span> <span class="title">Improper Integrals -- Asymptotes</span>
+</h3>
+<p id="p-860">We can also have improper integrals due to vertical asymptotes. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals"><p id="p-861">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">b</em>, then it is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _{a} ^{b} f(x) dx = \lim _{k \to b^{-}} \int _{a}^{k} f(x) dx
+\end{equation*}
+</div>
+<p class="continuation">or if there is an infinite discontinuity at <em class="emphasis">a</em>, then it is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _{a}^{b} f(x) dx = \lim _{k \to a^+} \int _{k}^{b} f(x) dx
+\end{equation*}
+</div></article> <article class="project project-like" id="proj-asymptote-improper-integral-example"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span>
+</h6>
+<p id="p-862">Evaluate: \(\displaystyle\int _0 ^8 \dfrac{1}{\sqrt[3]{x}} dx \)</p>
+<p id="p-863"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><div class="displaymath">
+\begin{align*}
+\int _0 ^8 \dfrac{1}{\sqrt[3]{x}} dx \amp = \lim _{k \to 0^{+}} \int _k ^8 \dfrac{1}{\sqrt[3]{x}} dx \\
+\amp = \lim _{k \to 0^{+}} \int _k ^8 x ^{-\frac{1}{3}} dx \\
+\amp = \lim _{k \to 0^{+}} \left[ \dfrac{x ^{\frac{2}{3}}}{\frac{2}{3}} \right] _k ^8 \\
+\amp = \lim _{k \to 0^{+}} \left[ \dfrac{3}{2} x ^{\frac{2}{3}} \right] _k ^8 \\
+\amp = \lim _{k \to 0^{+}} \left( \dfrac{3}{2} (8) ^{\frac{2}{3}} - \dfrac{3}{2} (k) ^{\frac{2}{3}} \right)\\
+\amp = \dfrac{3}{2} (4) - \dfrac{3}{2} (0)\\
+\amp = \dfrac{12}{2} - 0\\
+\amp = 6 
+\end{align*}
+</div></div></div></p></article></p>
+<p id="p-864">Similarly to integrals to infinity, you can evaluate a function that has an asymptote between \([a\mbox{, }b]\) by splitting the function into two pieces. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals-with-discontinuity"><p id="p-865">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">c</em> in \((a\mbox{, }b\) is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _a ^b f(x) dx = \int _a ^c f(x) dx + \int _c ^ b f(x) dx 
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-307"><p id="p-866">If both converge, then the functions converges.</p></li>
+<li id="li-308"><p id="p-867">Otherwise, the function diverges.</p></li>
+</ul></article> <article class="note remark-like" id="note-improper-integral-errors"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">7.5.3</span><span class="period">.</span>
+</h6>You cannot simply apply the fundamental theorem of calculus directly to an improper integral. If you try you will get crazy results such as a negative area.</article></p></section><section class="conclusion" id="conclusion-10"></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-18T15:11:10-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">First, let's go over a few corrolations. Since derivatives and integrals are inverses of each other. The following operations are inverses as well: <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines">RULES</td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">power</td>
+<td class="l m b0 r0 l0 t0 lines">\(\longrightarrow\)</td>
+<td class="l m b0 r0 l0 t0 lines">power</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">trig</td>
+<td class="l m b0 r0 l0 t0 lines">\(\longrightarrow\)</td>
+<td class="l m b0 r0 l0 t0 lines">trig</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">quotient</td>
+<td class="l m b0 r0 l0 t0 lines">\(\longrightarrow\)</td>
+<td class="l m b0 r0 l0 t0 lines">N/A</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">chain</td>
+<td class="l m b0 r0 l0 t0 lines">\(\longrightarrow\)</td>
+<td class="l m b0 r0 l0 t0 lines">u-substitution</td>
+</tr>
+</table></div></figure> <article class="assemblage assemblage-like"><h6 class="heading"><span class="title">RECALL.</span></h6>
+<div class="displaymath">
+\begin{align*}
+\dfrac{d}{dx}\left( (1+ 3x^2)^7 \right) \amp = 7(1 + 3x^2)^6 \cdot 6x\\
+\amp = 42x (1 + 3x^2)^6
+\end{align*}
+</div></article> <p>IDEA: <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath">
+\begin{equation*}
+\nearrow \dfrac{d}{dx} (\cdots) \searrow 
+\end{equation*}
+</div></td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(F(x) = (1 + 3x^2)^7\)</td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath">
+\begin{equation*}
+\rightleftharpoons
+\end{equation*}
+</div></td>
+<td class="l m b0 r0 l0 t0 lines">\(f(x) = 42x(1 + 3x^2)^7\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath">
+\begin{equation*}
+\nwarrow \int \cdots dx \swarrow
+\end{equation*}
+</div></td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></p> <article class="project project-like"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
+</h6>
+<p>Evaluate \(\displaystyle\int 42x (1 + 3x^2)^6 dx\) by u-substitution:</p>
+<ol class="decimal">
+<li>
+<p>choose a \(u = g(x)\) that matches the "inside function"</p>
+<div class="displaymath">
+\begin{equation*}
+u = g(x) = 1 + 3x^2
+\end{equation*}
+</div>
+</li>
+<li>
+<p>define differential \(du\text{;}\) recall \(du = g'(x) dx\)</p>
+<div class="displaymath">
+\begin{equation*}
+du = 6x dx 
+\end{equation*}
+</div>
+</li>
+<li>
+<p>rewrite original integral in terms of \(u\) and \(du\)</p>
+<div class="displaymath">
+\begin{align*}
+\int 42x ( 1 + 3x^2)^6 dx \amp = \int \underbrace{(1 + 3x^2)^6}_{u^6} \cdot \underbrace{42x dx}_{7du}\\
+\amp = \int 7u^6 du\\
+\amp = 7 \left( \dfrac{u^7}{7} \right) + c \\
+\amp = (1 + 3x^2)^7 + c
+\end{align*}
+</div>
+</li>
+</ol></article></p>
+<span class="incontext"><a href="sec-integration-by-substitution.html#p-456">in-context</a></span>
+</body>
+</html>

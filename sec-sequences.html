@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-18T15:11:06-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sequences</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\foo}{bar}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="calc-notes.html"><span class="title">Calculus Notes</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-infinite-series.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-infinite-series.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-monotone-sequence.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-infinite-series.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-infinite-series.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-monotone-sequence.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link part"><a href="calc-1.html" data-scroll="calc-1"><span class="codenumber">I</span> <span class="title">Calculus I</span></a></li>
+<li class="link">
+<a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
+<li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
+<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
+<li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
+<li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity</a></li>
+<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives</a></li>
+<li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques</a></li>
+<li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions</a></li>
+<li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions">Trig Functions</a></li>
+<li><a href="sec-chain-rule.html" data-scroll="sec-chain-rule">Chain Rule</a></li>
+<li><a href="sec-implicit-differentiation.html" data-scroll="sec-implicit-differentiation">Implicit Differentiation</a></li>
+<li><a href="sec-related-rates.html" data-scroll="sec-related-rates">Related Rates</a></li>
+<li><a href="sec-local-linear-approx-dif.html" data-scroll="sec-local-linear-approx-dif">Local Linear Approximation Differential</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-applications-of-derivatives.html" data-scroll="chap-applications-of-derivatives"><span class="codenumber">3</span> <span class="title">Applications of Derivatives</span></a><ul>
+<li><a href="sec-appliations-of-derivatives.html" data-scroll="sec-appliations-of-derivatives">Applications of Derivatives</a></li>
+<li><a href="sec-relative-extrema.html" data-scroll="sec-relative-extrema">Relative Extrema</a></li>
+<li><a href="sec-absolute-extrema.html" data-scroll="sec-absolute-extrema">Absolute Extrema</a></li>
+<li><a href="sec-applied-max-min.html" data-scroll="sec-applied-max-min">Applied Max-Min Problems</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-integrals.html" data-scroll="chap-integrals"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="sec-intro-to-integrals.html" data-scroll="sec-intro-to-integrals">Intro to Integrals</a></li>
+<li><a href="sec-integration-by-substitution.html" data-scroll="sec-integration-by-substitution">Integration by Substitution</a></li>
+<li><a href="sec-area-and-definite-integrals.html" data-scroll="sec-area-and-definite-integrals">Area and Definite Integrals</a></li>
+<li><a href="sec-fundamental-theorum-of-calculus.html" data-scroll="sec-fundamental-theorum-of-calculus">Fundamental Theorum of Calculus</a></li>
+<li><a href="sec-definite-integrals-w-u-sub.html" data-scroll="sec-definite-integrals-w-u-sub">Definite Integrals with U-Substitution</a></li>
+</ul>
+</li>
+<li class="link part"><a href="calc-2.html" data-scroll="calc-2"><span class="codenumber">II</span> <span class="title">Calculus II</span></a></li>
+<li class="link">
+<a href="chap-applications-of-definite-integrals.html" data-scroll="chap-applications-of-definite-integrals"><span class="codenumber">5</span> <span class="title">Applications of Definite Integrals</span></a><ul>
+<li><a href="sec-area-between-curves.html" data-scroll="sec-area-between-curves">Area Between Two Curves</a></li>
+<li><a href="sec-volumes-by-slicing.html" data-scroll="sec-volumes-by-slicing">Volumes by Slicing</a></li>
+<li><a href="sec-arc-length-and-surface-area.html" data-scroll="sec-arc-length-and-surface-area">Arc Length and Surface Area</a></li>
+<li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-exponential-log-inverse-trig-functions.html" data-scroll="chap-exponential-log-inverse-trig-functions"><span class="codenumber">6</span> <span class="title">Exponential, Logarithmic and Inverse Trigonometric Functions</span></a><ul>
+<li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions">Exponential and Logrithmic Functions</a></li>
+<li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
+<li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
+<li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule">L'Hopital's Rule</a></li>
+<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions</a></li>
+<li><a href="sec-hyperbolic-trig-functions.html" data-scroll="sec-hyperbolic-trig-functions">Hyperbolic Trig Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">7</span> <span class="title">Principles of Integral Evaluation</span></a><ul>
+<li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts</a></li>
+<li><a href="sec-integrating-trig-functions.html" data-scroll="sec-integrating-trig-functions">Integrating Trig Functions</a></li>
+<li><a href="sec-trig-substitution.html" data-scroll="sec-trig-substitution">Trig Substitution</a></li>
+<li><a href="sec-partial-fractions.html" data-scroll="sec-partial-fractions">Partial Fractions</a></li>
+<li><a href="sec-improper-integrals.html" data-scroll="sec-improper-integrals">Improper Integrals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-differential-equations.html" data-scroll="chap-differential-equations"><span class="codenumber">8</span> <span class="title">Differential Equations</span></a><ul><li><a href="sec-intro-to-differential-equations.html" data-scroll="sec-intro-to-differential-equations">Intro to Differential Equations</a></li></ul>
+</li>
+<li class="link part"><a href="calc-3.html" data-scroll="calc-3"><span class="codenumber">III</span> <span class="title">Calculus III</span></a></li>
+<li class="link">
+<a href="ch-infinite-series.html" data-scroll="ch-infinite-series"><span class="codenumber">9</span> <span class="title">Infinite Series</span></a><ul>
+<li><a href="sec-sequences.html" data-scroll="sec-sequences" class="active">Sequences</a></li>
+<li><a href="sec-monotone-sequence.html" data-scroll="sec-monotone-sequence">Monotone Sequence</a></li>
+<li><a href="sec-infinite-series.html" data-scroll="sec-infinite-series">Infinite Series</a></li>
+<li><a href="sec-convergence-test.html" data-scroll="sec-convergence-test">Convergence Tests</a></li>
+<li><a href="sec-Comparison-Ratio-and-Root-Tests.html" data-scroll="sec-Comparison-Ratio-and-Root-Tests">Comparison, Ratio, and Root Tests</a></li>
+<li><a href="sec-alternating-series-conditional-absolute-convergence.html" data-scroll="sec-alternating-series-conditional-absolute-convergence">Alternating Series; Conditional and Absolute Convergence</a></li>
+<li><a href="sec-maclaurin-taylor-polynomials.html" data-scroll="sec-maclaurin-taylor-polynomials">Maclaurin and Taylor Polynomials</a></li>
+<li><a href="sec-maclaurin-taylor-power-series.html" data-scroll="sec-maclaurin-taylor-power-series">Maclaurin and Taylor Series; Power Series</a></li>
+<li><a href="sec-differentiating-and-integrating-power-series.html" data-scroll="sec-differentiating-and-integrating-power-series">Differentiation and Integrating Power Series</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-parametric-and-polar-curves-conic-sections.html" data-scroll="ch-parametric-and-polar-curves-conic-sections"><span class="codenumber">10</span> <span class="title">Parametric and Polar Curves; Conic Sections</span></a><ul>
+<li><a href="sec-parametric-equations-tangent-lines-and-arc-length-for-parametric-curves.html" data-scroll="sec-parametric-equations-tangent-lines-and-arc-length-for-parametric-curves">Parametric Equations, Tangent Lines, and Arc Length for Parametric Curves</a></li>
+<li><a href="sec-polar-coordinates.html" data-scroll="sec-polar-coordinates">Polar Coordinates</a></li>
+<li><a href="sec-tangent-lines-arc-length-and-area-for-polar-coordinates.html" data-scroll="sec-tangent-lines-arc-length-and-area-for-polar-coordinates">Tangent Lines, Arc Length, and Area for Polar Coordinates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-3space-vectors.html" data-scroll="ch-3space-vectors"><span class="codenumber">11</span> <span class="title">Three-Dimentional Space; Vectors</span></a><ul>
+<li><a href="sec-rectangular-coordinates-in-3d-space-cylindrical-surfaces.html" data-scroll="sec-rectangular-coordinates-in-3d-space-cylindrical-surfaces">Rectangle Coordinates in 3D Space; Cylindrical Surfaces</a></li>
+<li><a href="sec-vectors.html" data-scroll="sec-vectors">Vectors</a></li>
+<li><a href="sec-dot-products-projections.html" data-scroll="sec-dot-products-projections">Dot Products and Projections</a></li>
+<li><a href="sec-cross-product.html" data-scroll="sec-cross-product">Cross Product</a></li>
+<li><a href="sec-parametric-equations-of-lines.html" data-scroll="sec-parametric-equations-of-lines">Parametric Equations of Lines</a></li>
+<li><a href="sec-planes-in-3space.html" data-scroll="sec-planes-in-3space">Planes in 3-Space</a></li>
+<li><a href="sec-quadric-surfaces.html" data-scroll="sec-quadric-surfaces">Quadric Surfaces</a></li>
+<li><a href="sec-cylindrical-and-spherical-coordinates.html" data-scroll="sec-cylindrical-and-spherical-coordinates">Cylindrical and Spherical Coordinates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-vector-valued-functions.html" data-scroll="ch-vector-valued-functions"><span class="codenumber">12</span> <span class="title">Vector-Values Functions</span></a><ul>
+<li><a href="sec-vector-values-functions.html" data-scroll="sec-vector-values-functions">Vector-Valued Functions</a></li>
+<li><a href="sec-calculus-of-vector-values-functions.html" data-scroll="sec-calculus-of-vector-values-functions">Calculus of Vector-Valued Functions</a></li>
+<li><a href="sec-change-of-parameters-arc-length.html" data-scroll="sec-change-of-parameters-arc-length">Change of Parameter; Arc Length</a></li>
+<li><a href="sec-unit-tangent-unit-normal-binomial-vectors.html" data-scroll="sec-unit-tangent-unit-normal-binomial-vectors">Unit Tangent, Unit Normal, and Binomial Vectors</a></li>
+<li><a href="sec-Curvature.html" data-scroll="sec-Curvature">Curvature</a></li>
+</ul>
+</li>
+<li class="link part"><a href="calc-4.html" data-scroll="calc-4"><span class="codenumber">IV</span> <span class="title">Calculus IV (*)</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-sequences"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">9.1</span> <span class="title">Sequences</span>
+</h2>
+<p id="p-888"><article class="definition definition-like" id="def-sequence"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-889">A sequence is an infinite list of numbers:</p>
+<div class="displaymath">
+\begin{equation*}
+a, \quad a_1, \quad a_2, \quad a_3, \dots \underbrace{a_n}_{\text{n}^\text{th} \text{term, or general term}}
+\end{equation*}
+</div>
+<article class="example example-like" id="ex-sequence"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-sequence"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-sequence"><article class="example example-like"><div class="displaymath" id="p-890">
+\begin{equation*}
+1, \quad 4, \quad 9, \quad 16, \quad 25, \dots, n^2 
+\end{equation*}
+</div></article></div></article></p>
+<p id="p-891">We can think of the previous example ( \(a_n = n^2\) ) as a function:</p>
+<div class="displaymath">
+\begin{equation*}
+a(n) = n^2
+\end{equation*}
+</div>
+<p id="p-892">These functions are writen in one of two ways:</p>
+<ul class="disc">
+<li id="li-314"><p id="p-893">recursive -- uses the previous term to define the following term</p></li>
+<li id="li-315"><p id="p-894">closed form -- non-recursive</p></li>
+</ul>
+<article class="assemblage assemblage-like" id="assemblage-brace-notation-for-sequences"><h6 class="heading"><span class="title">Brace Notation.</span></h6>
+<ul id="p-895" class="disc">
+<li id="li-316"><p id="p-896">\(\displaystyle \frac{1}{2}, \quad \frac{2}{5}, \quad \frac{7}{10}, \quad \frac{15}{17} \dots\)</p></li>
+<li id="li-317"><p id="p-897">\(\displaystyle a_n = \dfrac{2^n - 1}{n^2 + 1}\)</p></li>
+</ul>
+<div class="displaymath">
+\begin{equation*}
+\left\{ \dfrac{2^n - 1}{n^2 + 1} \right\}_{n = 1}^{\infty} 
+\end{equation*}
+</div></article><p id="p-898">The sequence \(a_1, a_2, \dots, a_n\) has a limit, \(L\text{,}\) written:</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{n\to\infty} a_n = L
+\end{equation*}
+</div>
+<p class="continuation">if \(a_n\) can be made as close to \(L\) as we like by taking n large enough.</p>
+<ul id="p-899" class="disc">
+<li id="li-318"><p id="p-900">If such \(L\) exists, we say the sequence <code class="code-inline tex2jax_ignore">converges</code> to \(L\)</p></li>
+<li id="li-319"><p id="p-901">If it doesn't, we say the sequence <code class="code-inline tex2jax_ignore">diverged</code>.</p></li>
+<li id="li-320">
+<p id="p-902">Suppose:</p>
+<div class="displaymath">
+\begin{align*}
+\amp \left\{ a_n \right\}_{n = 1}^{\infty} \text{ converges to } L_1 \\
+\amp \left\{ b_n \right\}_{n = 1}^{\infty} \text{ converges to } L_2\\
+\amp c \text{ is a constant}
+\end{align*}
+</div>
+<ul class="circle">
+<li id="li-321"><p id="p-903">\(\displaystyle \displaystyle \lim_{n\to\infty} c = c\)</p></li>
+<li id="li-322"><p id="p-904">\(\displaystyle \displaystyle \lim_{n\to\infty} ca_n = c \left( \displaystyle \lim_{n\to\infty} a_n \right) = cL_1\)</p></li>
+<li id="li-323"><p id="p-905">\(\displaystyle \displaystyle \lim_{n\to\infty} \left( a_n \pm b_n \right) = L_1 + L_2\)</p></li>
+<li id="li-324"><p id="p-906">\(\displaystyle \displaystyle \lim_{n\to\infty} \left( a_n b_n \right) = L_1 L_2\)</p></li>
+<li id="li-325"><p id="p-907">\(\displaystyle \displaystyle \lim_{n\to\infty} \dfrac{a_n}{b_n} = \dfrac{L_1}{L_2} \text{ provided } L_2 \neq 0\)</p></li>
+</ul>
+</li>
+</ul>
+<article class="assemblage assemblage-like" id="assemblage-general-sequence-facts"><h6 class="heading"><span class="title">General Sequence Facts.</span></h6>
+<ul id="p-908" class="disc">
+<li id="li-326"><p id="p-909">\(\displaystyle a_n = x^n 
+\begin{cases}
+\text{converges to } 0 \text{ if } \mid x \mid \lt 1\\
+\text{diverges if } \mid x \mid \gt 1
+\end{cases}\)</p></li>
+<li id="li-327"><p id="p-910">\(\displaystyle a_n = \frac{1}{n^P}
+\begin{cases}
+\text{converges to } 0 \text{ if } P \gt 0\\
+\text{diverges if } P \lt 0
+\end{cases}\)</p></li>
+</ul></article><article class="project project-like" id="proj-lhopitals-rule-application-ex"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-911">Consider \(a_n = \frac{n}{e^n}\) and determine if it converges or diverges:</p>
+<p id="p-912">\(\displaystyle \lim_{n\to\infty} \frac{n}{e^n} = \frac{\infty}{\infty} \text{  indeterminate form}\)</p>
+<p id="p-913">When we use \(x\) the variable is considered continuous (not skipping) but \(n\) is descrete (only integrers). Since \(n\) is not continuous, we can't use L'Hopital's Rule directly. We have to <code class="code-inline tex2jax_ignore">extend the domain</code> from \(n\) to \(x\text{.}\)</p>
+<p id="p-914">\(\displaystyle \lim_{x\to\infty} \frac{x}{e^x} = \displaystyle \lim_{x\to\infty} \frac{1}{e^x} = \displaystyle \lim_{x\to\infty} \frac{1}{\infty} = 0\)</p>
+<p id="p-915">This will always equal to \(\displaystyle \lim_{n\to\infty} \frac{n}{e^n}\text{.}\)</p>
+<p id="p-916">We simply write:</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{n\to\infty} \frac{n}{e^n} = \lim_{n\to\infty} \frac{1}{e^n} = 0
+\end{equation*}
+</div>
+<p class="continuation">but know we skipped steps.</p></article></section></div></main>
+</div>
+</body>
+</html>

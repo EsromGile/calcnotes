@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-18T15:11:03-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Applications of Derivatives</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\foo}{bar}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="calc-notes.html"><span class="title">Calculus Notes</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap-applications-of-derivatives.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-applications-of-derivatives.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-relative-extrema.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap-applications-of-derivatives.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-applications-of-derivatives.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-relative-extrema.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link part"><a href="calc-1.html" data-scroll="calc-1"><span class="codenumber">I</span> <span class="title">Calculus I</span></a></li>
+<li class="link">
+<a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
+<li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
+<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
+<li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
+<li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity</a></li>
+<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives</a></li>
+<li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques</a></li>
+<li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions</a></li>
+<li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions">Trig Functions</a></li>
+<li><a href="sec-chain-rule.html" data-scroll="sec-chain-rule">Chain Rule</a></li>
+<li><a href="sec-implicit-differentiation.html" data-scroll="sec-implicit-differentiation">Implicit Differentiation</a></li>
+<li><a href="sec-related-rates.html" data-scroll="sec-related-rates">Related Rates</a></li>
+<li><a href="sec-local-linear-approx-dif.html" data-scroll="sec-local-linear-approx-dif">Local Linear Approximation Differential</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-applications-of-derivatives.html" data-scroll="chap-applications-of-derivatives"><span class="codenumber">3</span> <span class="title">Applications of Derivatives</span></a><ul>
+<li><a href="sec-appliations-of-derivatives.html" data-scroll="sec-appliations-of-derivatives" class="active">Applications of Derivatives</a></li>
+<li><a href="sec-relative-extrema.html" data-scroll="sec-relative-extrema">Relative Extrema</a></li>
+<li><a href="sec-absolute-extrema.html" data-scroll="sec-absolute-extrema">Absolute Extrema</a></li>
+<li><a href="sec-applied-max-min.html" data-scroll="sec-applied-max-min">Applied Max-Min Problems</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-integrals.html" data-scroll="chap-integrals"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="sec-intro-to-integrals.html" data-scroll="sec-intro-to-integrals">Intro to Integrals</a></li>
+<li><a href="sec-integration-by-substitution.html" data-scroll="sec-integration-by-substitution">Integration by Substitution</a></li>
+<li><a href="sec-area-and-definite-integrals.html" data-scroll="sec-area-and-definite-integrals">Area and Definite Integrals</a></li>
+<li><a href="sec-fundamental-theorum-of-calculus.html" data-scroll="sec-fundamental-theorum-of-calculus">Fundamental Theorum of Calculus</a></li>
+<li><a href="sec-definite-integrals-w-u-sub.html" data-scroll="sec-definite-integrals-w-u-sub">Definite Integrals with U-Substitution</a></li>
+</ul>
+</li>
+<li class="link part"><a href="calc-2.html" data-scroll="calc-2"><span class="codenumber">II</span> <span class="title">Calculus II</span></a></li>
+<li class="link">
+<a href="chap-applications-of-definite-integrals.html" data-scroll="chap-applications-of-definite-integrals"><span class="codenumber">5</span> <span class="title">Applications of Definite Integrals</span></a><ul>
+<li><a href="sec-area-between-curves.html" data-scroll="sec-area-between-curves">Area Between Two Curves</a></li>
+<li><a href="sec-volumes-by-slicing.html" data-scroll="sec-volumes-by-slicing">Volumes by Slicing</a></li>
+<li><a href="sec-arc-length-and-surface-area.html" data-scroll="sec-arc-length-and-surface-area">Arc Length and Surface Area</a></li>
+<li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-exponential-log-inverse-trig-functions.html" data-scroll="chap-exponential-log-inverse-trig-functions"><span class="codenumber">6</span> <span class="title">Exponential, Logarithmic and Inverse Trigonometric Functions</span></a><ul>
+<li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions">Exponential and Logrithmic Functions</a></li>
+<li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
+<li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
+<li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule">L'Hopital's Rule</a></li>
+<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions</a></li>
+<li><a href="sec-hyperbolic-trig-functions.html" data-scroll="sec-hyperbolic-trig-functions">Hyperbolic Trig Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">7</span> <span class="title">Principles of Integral Evaluation</span></a><ul>
+<li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts</a></li>
+<li><a href="sec-integrating-trig-functions.html" data-scroll="sec-integrating-trig-functions">Integrating Trig Functions</a></li>
+<li><a href="sec-trig-substitution.html" data-scroll="sec-trig-substitution">Trig Substitution</a></li>
+<li><a href="sec-partial-fractions.html" data-scroll="sec-partial-fractions">Partial Fractions</a></li>
+<li><a href="sec-improper-integrals.html" data-scroll="sec-improper-integrals">Improper Integrals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-differential-equations.html" data-scroll="chap-differential-equations"><span class="codenumber">8</span> <span class="title">Differential Equations</span></a><ul><li><a href="sec-intro-to-differential-equations.html" data-scroll="sec-intro-to-differential-equations">Intro to Differential Equations</a></li></ul>
+</li>
+<li class="link part"><a href="calc-3.html" data-scroll="calc-3"><span class="codenumber">III</span> <span class="title">Calculus III</span></a></li>
+<li class="link">
+<a href="ch-infinite-series.html" data-scroll="ch-infinite-series"><span class="codenumber">9</span> <span class="title">Infinite Series</span></a><ul>
+<li><a href="sec-sequences.html" data-scroll="sec-sequences">Sequences</a></li>
+<li><a href="sec-monotone-sequence.html" data-scroll="sec-monotone-sequence">Monotone Sequence</a></li>
+<li><a href="sec-infinite-series.html" data-scroll="sec-infinite-series">Infinite Series</a></li>
+<li><a href="sec-convergence-test.html" data-scroll="sec-convergence-test">Convergence Tests</a></li>
+<li><a href="sec-Comparison-Ratio-and-Root-Tests.html" data-scroll="sec-Comparison-Ratio-and-Root-Tests">Comparison, Ratio, and Root Tests</a></li>
+<li><a href="sec-alternating-series-conditional-absolute-convergence.html" data-scroll="sec-alternating-series-conditional-absolute-convergence">Alternating Series; Conditional and Absolute Convergence</a></li>
+<li><a href="sec-maclaurin-taylor-polynomials.html" data-scroll="sec-maclaurin-taylor-polynomials">Maclaurin and Taylor Polynomials</a></li>
+<li><a href="sec-maclaurin-taylor-power-series.html" data-scroll="sec-maclaurin-taylor-power-series">Maclaurin and Taylor Series; Power Series</a></li>
+<li><a href="sec-differentiating-and-integrating-power-series.html" data-scroll="sec-differentiating-and-integrating-power-series">Differentiation and Integrating Power Series</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-parametric-and-polar-curves-conic-sections.html" data-scroll="ch-parametric-and-polar-curves-conic-sections"><span class="codenumber">10</span> <span class="title">Parametric and Polar Curves; Conic Sections</span></a><ul>
+<li><a href="sec-parametric-equations-tangent-lines-and-arc-length-for-parametric-curves.html" data-scroll="sec-parametric-equations-tangent-lines-and-arc-length-for-parametric-curves">Parametric Equations, Tangent Lines, and Arc Length for Parametric Curves</a></li>
+<li><a href="sec-polar-coordinates.html" data-scroll="sec-polar-coordinates">Polar Coordinates</a></li>
+<li><a href="sec-tangent-lines-arc-length-and-area-for-polar-coordinates.html" data-scroll="sec-tangent-lines-arc-length-and-area-for-polar-coordinates">Tangent Lines, Arc Length, and Area for Polar Coordinates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-3space-vectors.html" data-scroll="ch-3space-vectors"><span class="codenumber">11</span> <span class="title">Three-Dimentional Space; Vectors</span></a><ul>
+<li><a href="sec-rectangular-coordinates-in-3d-space-cylindrical-surfaces.html" data-scroll="sec-rectangular-coordinates-in-3d-space-cylindrical-surfaces">Rectangle Coordinates in 3D Space; Cylindrical Surfaces</a></li>
+<li><a href="sec-vectors.html" data-scroll="sec-vectors">Vectors</a></li>
+<li><a href="sec-dot-products-projections.html" data-scroll="sec-dot-products-projections">Dot Products and Projections</a></li>
+<li><a href="sec-cross-product.html" data-scroll="sec-cross-product">Cross Product</a></li>
+<li><a href="sec-parametric-equations-of-lines.html" data-scroll="sec-parametric-equations-of-lines">Parametric Equations of Lines</a></li>
+<li><a href="sec-planes-in-3space.html" data-scroll="sec-planes-in-3space">Planes in 3-Space</a></li>
+<li><a href="sec-quadric-surfaces.html" data-scroll="sec-quadric-surfaces">Quadric Surfaces</a></li>
+<li><a href="sec-cylindrical-and-spherical-coordinates.html" data-scroll="sec-cylindrical-and-spherical-coordinates">Cylindrical and Spherical Coordinates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-vector-valued-functions.html" data-scroll="ch-vector-valued-functions"><span class="codenumber">12</span> <span class="title">Vector-Values Functions</span></a><ul>
+<li><a href="sec-vector-values-functions.html" data-scroll="sec-vector-values-functions">Vector-Valued Functions</a></li>
+<li><a href="sec-calculus-of-vector-values-functions.html" data-scroll="sec-calculus-of-vector-values-functions">Calculus of Vector-Valued Functions</a></li>
+<li><a href="sec-change-of-parameters-arc-length.html" data-scroll="sec-change-of-parameters-arc-length">Change of Parameter; Arc Length</a></li>
+<li><a href="sec-unit-tangent-unit-normal-binomial-vectors.html" data-scroll="sec-unit-tangent-unit-normal-binomial-vectors">Unit Tangent, Unit Normal, and Binomial Vectors</a></li>
+<li><a href="sec-Curvature.html" data-scroll="sec-Curvature">Curvature</a></li>
+</ul>
+</li>
+<li class="link part"><a href="calc-4.html" data-scroll="calc-4"><span class="codenumber">IV</span> <span class="title">Calculus IV (*)</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-appliations-of-derivatives"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Applications of Derivatives</span>
+</h2>
+<p id="p-330">This section is about attaching meaning to the mechanics -- new ideas, not new calculations.</p>
+<p id="p-331">Consider the following graph: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel middle" style="width:47.3684210526316%;"><p id="p-332"><figure class="figure figure-like" id="fig-des-app-of-derivatives"><iframe src="https://www.desmos.com/calculator/acrsuedvnc" id="interactive-21" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+<div class="sbspanel middle" style="width:47.3684210526316%;"><p id="p-333">If we look at this graph, we can  describe it as increasing, then decreasing, then increasing again.</p></div>
+</div></div> <article class="definition definition-like" id="def-app-of-derivatives"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h6>
+<p id="p-334">Let \(f\) be defined on an interval containing \(x_1\) and \(x_2\text{:}\)</p>
+<ul class="disc">
+<li id="li-133"><p id="p-335">\(f\) is increasing on the interval if \(f(x_1) \lt f(x_2)\) whenever \(x_1 \lt x_2\)</p></li>
+<li id="li-134"><p id="p-336">\(f\) is decreasing if \(f(x_1) \gt f(x_2)\) whenever \(x_1 \gt x_2\)</p></li>
+<li id="li-135"><p id="p-337">\(f\) is constant if \(f(x_1) = f(x_2)\) for all \(x_1\) and \(x_2\)</p></li>
+</ul></article> <article class="theorem theorem-like" id="the-app-of-derivatives"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-338">\(f\) is continuous on \([a,b]\) and differentiable on \((a,b)\)</p>
+<ul class="disc">
+<li id="li-136"><p id="p-339">if \(f'(x) \gt 0\) for all \(x\) in \((a,b)\text{,}\) \(f\) is increasing on \([a,b]\)</p></li>
+<li id="li-137"><p id="p-340">if \(f'(x) \lt 0\text{,}\) \(f\) is decreasing on \([a,b]\)</p></li>
+<li id="li-138"><p id="p-341">if \(f'(x) = 0\text{,}\) \(f\) is constant on \([a,b]\)</p></li>
+</ul>
+<p id="p-342">In summary, the the sign of the derivative desrives the behavior of the function and the size of the derivative describes how steep the function is.</p>
+<p id="p-343">We call points where \(f'(x) = 0\) or are undefined, critical points. If they are not undefined, they are also called stationary points.</p>
+<p id="p-344">Additionaly, the second derivative describes the concavity of a function and can be understood as follows: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel top" style="width:47.3684210526316%;"><p id="p-345"><figure class="figure figure-like" id="fig-des-conc-up"><iframe src="https://www.desmos.com/calculator/jrrmc1pkgr" id="interactive-22" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span>concave up (smile)</figcaption></figure></p></div>
+<div class="sbspanel top" style="width:47.3684210526316%;"><p id="p-346"><figure class="figure figure-like" id="fig-des-conc-down"><iframe src="https://www.desmos.com/calculator/ddnjnkkkbc" id="interactive-23" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.5<span class="period">.</span></span><span class="space"> </span>concave down (frown)</figcaption></figure></p></div>
+</div></div></p>
+<ul id="p-347" class="disc">
+<li id="li-139"><p id="p-348">the function is concave up if \(f'\) is increasing or if \(f'' \gt 0\)</p></li>
+<li id="li-140"><p id="p-349">the function is concave down if \(f'\) is decreasin or if \(f'' \lt 0\)</p></li>
+</ul>
+<p id="p-350">When sketching graphs, combinations of behavior and concavity provide the building blocks for graphing functions: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel top" style="width:47.3684210526316%;"><p id="p-351"><figure class="figure figure-like" id="fig-des-increasing-conc-down"><iframe src="https://www.desmos.com/calculator/wt9hbrptbb" id="interactive-24" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.6<span class="period">.</span></span><span class="space"> </span>increasing, concave down</figcaption></figure> <figure class="figure figure-like" id="fig-des-increasing-conc-up"><iframe src="https://www.desmos.com/calculator/cagux8xtou" id="interactive-25" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.7<span class="period">.</span></span><span class="space"> </span>increasing, concave up</figcaption></figure></p></div>
+<div class="sbspanel top" style="width:47.3684210526316%;"><p id="p-352"><figure class="figure figure-like" id="fig-des-decreasing-conc-down"><iframe src="https://www.desmos.com/calculator/m1hlihnwzh" id="interactive-26" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.8<span class="period">.</span></span><span class="space"> </span>decreasing, concave down</figcaption></figure> <figure class="figure figure-like" id="fig-des-decreasing-conc-up"><iframe src="https://www.desmos.com/calculator/kvyp1ccdhp" id="interactive-27" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.9<span class="period">.</span></span><span class="space"> </span>decreasing, concave up</figcaption></figure></p></div>
+</div></div></p></article></p>
+<p id="p-353">When graphing functions, there are some important points that we need to be aware of:</p>
+<ul class="disc">
+<li id="li-141"><p id="p-354">critical points: \(f'(x) = 0\) or \(f'(x)\) is undefined</p></li>
+<li id="li-142"><p id="p-355">inflection points: inflection points only occur at places where \(f''(x) = 0\) and occurs where concavity changes</p></li>
+</ul>
+<p class="continuation"><article class="note remark-like" id="note-inflection-points"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span>
+</h6>
+<p id="p-356">\(f''(x) = 0\) does not guarantee that there is an inflection point.</p></article></p>
+<p id="p-357">We will assign behavior on closed intervals and concavity on open intervals.</p>
+<article class="project project-like" id="proj-app-of-derivatives-example"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-358">Use \(f'\) and \(f''\) to find intervals of increasing/decreasing and concavity for the function, \(f(x) = 2x^6 - 4x^3\text{:}\)</p>
+<ul class="disc">
+<li id="li-143">
+<p id="p-359">\(\displaystyle f'(x)\)</p>
+<div class="displaymath">
+\begin{align*}
+f'(x) \amp = \dfrac{d}{dx}(2x^6 - 4x^3)\\
+\amp = 12x^5 - 12x^2\\
+\amp \ldots\\
+\amp = 12x^2(x - 1)(x^2 + x + 1)
+\end{align*}
+</div>
+</li>
+<li id="li-144">
+<p id="p-360">\(\displaystyle f''(x)\)</p>
+<div class="displaymath">
+\begin{align*}
+f''(x) \amp = \dfrac{d}{dx}(12x^5 - 12x^2)\\
+\amp = 60x^4 - 24x\\
+\amp = 12x(5x^3 -2)
+\end{align*}
+</div>
+</li>
+</ul>
+<p id="p-361">Find critical points, set \(f'(x) = 0\) and solve for \(x\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+0 = \amp  12x^2 (x - 1)(x^2 + x + 1)\\
+\amp x = 0, x = 1, \text{never zero}
+\end{align*}
+</div>
+<p class="continuation">Critical points are \(x = 0\) and \(x = 1\) (* both are stationary points).</p>
+<p id="p-362">Find the possible inflection points. Set \(f''(x) = 0\) and solve for \(x\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+0 = \amp 12x (5x^2 - 2)\\
+\amp x = 0,  x = \sqrt[3]{\frac{2}{5}} \approx 0.736
+\end{align*}
+</div>
+<p id="p-363">Analysis:</p>
+<ul class="disc">
+<li id="li-145">
+<p id="p-364">intervals of increasing/descreasing (2 critical points: \(x = 0\text{,}\) \(x = 1\))</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l0 t0 lines">intervals</td>
+<td class="c m b2 r2 l0 t0 lines">\((12x^2)(x-1)(x^2+x+1)\)</td>
+<td class="c m b2 r2 l0 t0 lines">\(f'(x)\)</td>
+<td class="c m b2 r0 l0 t0 lines">conclusion</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">\(x \lt 0\)</td>
+<td class="c m b0 r2 l0 t0 lines">\((+)(-)(+)\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(- \)</td>
+<td class="c m b0 r0 l0 t0 lines">decreasing \((- \infty, 0]\)</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">\(0 \lt x \lt 1\)</td>
+<td class="c m b0 r2 l0 t0 lines">\((+)(-)(+)\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(- \)</td>
+<td class="c m b0 r0 l0 t0 lines">decreasing \([0,1]\)</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">\(1 \lt x \)</td>
+<td class="c m b0 r2 l0 t0 lines">\((+)(+)(+) \)</td>
+<td class="c m b0 r2 l0 t0 lines">\(+ \)</td>
+<td class="c m b0 r0 l0 t0 lines">increasing \([1, \infty) \)</td>
+</tr>
+</table></div>
+</li>
+<li id="li-146">
+<p id="p-365">intervals of concavity (2 possible inflection points: \(x = 0\text{,}\) \(x = \sqrt[3]{\frac{2}{5}}\))</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l0 t0 lines">intervals</td>
+<td class="c m b2 r2 l0 t0 lines">\((12x)(5x^3 - 2)\)</td>
+<td class="c m b2 r2 l0 t0 lines">\(f''(x)\)</td>
+<td class="c m b2 r0 l0 t0 lines">conclusion</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">\(x \lt 0\)</td>
+<td class="c m b0 r2 l0 t0 lines">\((-)(-)\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(+\)</td>
+<td class="c m b0 r0 l0 t0 lines">concave up \((\infty, 0)\)</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">\(0 \lt x \lt \sqrt[3]{\frac{2}{5}}\)</td>
+<td class="c m b0 r2 l0 t0 lines">\((+)(-)\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(-\)</td>
+<td class="c m b0 r0 l0 t0 lines">concave down \(( 0, \sqrt[3]{\frac{2}{5}})\)</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">\(\sqrt[3]{\frac{2}{5}} \lt x\)</td>
+<td class="c m b0 r2 l0 t0 lines">\((+)(+)\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(+\)</td>
+<td class="c m b0 r0 l0 t0 lines">concave up \(( \sqrt[3]{\frac{2}{5}}, \infty)\)</td>
+</tr>
+</table></div>
+</li>
+</ul>
+<p id="p-366">Finally, here is a graph of what the function looks like. <figure class="figure figure-like" id="fig-des-app-of-derivatives-graph"><iframe src="https://www.desmos.com/calculator/bsjco8sbz1" id="interactive-28" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.11<span class="period">.</span></span><span class="space"> </span>\(f(x) = 2x^6 - 4x^3\)</figcaption></figure></p></article></section></div></main>
+</div>
+</body>
+</html>

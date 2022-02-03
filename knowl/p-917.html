@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-18T15:11:13-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p><article class="definition definition-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.1</span><span class="period">.</span>
+</h6>
+<p>\(\displaystyle \left\{ a_n \right\}_{n = 1}^{\infty} \) is called:</p>
+<ul class="disc">
+<li><p xmlns:svg="http://www.w3.org/2000/svg">strictly increasing if \(a_1 \lt a_2 \lt \dots \lt a_n\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">increasing if \(a_1 \leq a_2 \leq \dots \leq a_n\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">strictly decreasing if \(a_1 \gt a_2 \gt \dots \gt a_n\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">decreasing if \(a_1 \geq a_2 \geq \dots \geq a_n\)</p></li>
+</ul>
+<p xmlns:svg="http://www.w3.org/2000/svg">A sequence which is increasing or decreasing is <code class="code-inline tex2jax_ignore">monotone</code> and a sequence which is strictly increasing or decreasing is <code class="code-inline tex2jax_ignore">strictly monotone</code>.</p></article> <p xmlns:svg="http://www.w3.org/2000/svg">How do we tell what a squence does?</p></p>
+<ul class="disc">
+<li><p xmlns:svg="http://www.w3.org/2000/svg">strictly increasing if \(a_{n+1} - a_n \gt 0\) or if \(\dfrac{a_{n+1}}{a_n} \gt 1\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">increasing if \(a_{n+1} - a_n \geq 0\) or if \(\dfrac{a_{n+1}}{a_n} \geq 1\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">strictly decreasing if \(a_{n+1} - a_n \lt 0\) or if \(\dfrac{a_{n+1}}{a_n} \lt 1\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">decreasing if \(a_{n+1} - a_n \leq 0\) or if \(\dfrac{a_{n+1}}{a_n} \leq 1\)</p></li>
+</ul>
+<p class="continuation"><article class="project project-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.1</span><span class="period">.</span>
+</h6>
+<p>Determine the type of sequence:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+a_n \amp = \dfrac{n}{n+1}\\
+a_{n+1} \amp = \dfrac{n+1}{n+2} 
+\end{align*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;">
+<p>Substitution method:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+a_{n+1} - a_n \amp = \dfrac{n+1}{n+2} - \dfrac{n}{n+1} \\
+\amp = \dfrac{(n+1)(n+1)}{(n+2)(n+1)} - \dfrac{n(n_2)}{(n+2)(n+1)}\\
+\amp = \dfrac{(n+1)(n+1) - n (n+2)}{(n+2)(n+1)}\\
+\amp = \dfrac{n^2 + 2n + 1 - n^2 - 2n}{n^2+3n+2}\\
+\amp = \dfrac{1}{n^2+3n+2} \gt 0\\
+\amp \boxed{\text{strictly increasing}}
+\end{align*}
+</div>
+</div>
+<div class="sbspanel top" style="width:45%;">
+<p>Division method:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\dfrac{a_{n+1}}{a_n} \amp = \dfrac{\frac{n+1}{n+2}}{\frac{n}{n+1}} \\
+\amp = \dfrac{n+1}{n+2} \cdot \dfrac{n+1}{n} \\
+\amp = \dfrac{(n+1)(n+1)}{n(n+2)}\\
+\amp = \dfrac{n^2+2n+1}{n^2+2n} \gt 1\\
+\amp \boxed{\text{strictly increasing}} 
+\end{align*}
+</div>
+</div>
+</div></div></article></p>
+<span class="incontext"><a href="sec-monotone-sequence.html#p-917">in-context</a></span>
+</body>
+</html>
